@@ -14,3 +14,15 @@ for(let i =0; i<temp.length;i++){
     list.append(li);
 }
 
+const maxTemp = Math.max(...temp);
+console.log(maxTemp);
+const minTemp = Math.min(...temp);
+console.log(minTemp);
+
+const pMax = document.createElement('p');
+pMax.innerHTML = `Максимальная температура: ${maxTemp}&#8451;`;
+const pMin = document.createElement('p');
+pMin.innerHTML = `Минимальная температура: ${minTemp}&#8451;`;
+
+document.body.appendChild(pMax);
+document.body.appendChild(pMin);
